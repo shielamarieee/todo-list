@@ -102,5 +102,19 @@ body {
 }
 
 .red {color: rgb(255, 108, 108);}
+
 .orange {color: rgb(240, 194, 142);}
+
 .green {color: rgb(99, 143, 99);}
+
+/* --Footer-- */
+.footer {
+  display: flex;
+  background-color: var(--header-color);
+  height: 6vh;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
