@@ -5,9 +5,85 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo List</title>
+  <script src="https://kit.fontawesome.com/70237b74b7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="content"></div>
-  <script src="main.js"></script>
+  <header class="header">
+    <div class="logo">
+      <i class="fa-solid fa-list-check"></i>
+      <h1 class="title">Todo List</h1>
+    </div>
+  </header>
+  <main class="main">
+
+    <ul class="nav">
+      <!--Home Button-->
+      <h3 id="homeBtn" class="heading">
+        <i class="fa-solid fa-house"></i>
+        Home
+      </h3>
+      <!--Project Nav-->
+      <h3 class="heading">
+        <i class="fa-solid fa-list"></i>
+        Projects
+      </h3>
+      <li class="proj-list list">Sample 1</li>
+      <li class="proj-list list">Sample 2</li>
+      <button id="addProj" class="add-proj">
+        <i class="fa-solid fa-plus"></i>
+        Add Project
+      </button>
+      <!--Calendar Nav-->
+      <h3 class="heading">
+        <i class="fa-solid fa-calendar"></i>
+        Calendar
+      </h3>
+      <li class="today list">Today</li>
+      <li class="upcoming list">Upcoming</li>
+      <!--Priorities-->
+      <h3 class="heading">
+        <i class="fa-solid fa-star"></i>
+        Priorities
+      </h3>
+      <li class="very-important list">
+        <i class="fa-solid fa-circle red"></i>
+        Very Important
+      </li>
+      <li class="important list">
+        <i class="fa-solid fa-circle yellow"></i>
+        Important
+      </li>
+    </ul>
+
+    <section class="content">
+      <!--Project Heading-->
+      <div class="project-heading">
+        <h1 class="project-name">Tasks</h1>
+        <p class="project-description">tasks description here</p>
+      </div>
+      <!--Tasks-->
+      <div class="task very-impt">
+        <div class="task-info">
+          <input type="checkbox">
+          <h3 class="task-name">Sample</h3>
+        </div>
+        <p class="task-description">project description goes here long project description long long long long</p>
+        <div class="actions-btn">
+          <p class="duedate">Due: 07-27-22</p>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="options active">
+            <p id="edit" class="option">Edit</p>
+            <p id="delete" class="option">Delete</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Add Task Button-->
+      <button id="addTask" class="add-proj">
+        <i class="fa-solid fa-plus"></i>
+        Add Task
+      </button>
+    </section>
+  </main>
 </body>
 </html>
