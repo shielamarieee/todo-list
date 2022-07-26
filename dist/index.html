@@ -45,13 +45,17 @@
         <i class="fa-solid fa-star"></i>
         Priorities
       </h3>
-      <li class="very-important list">
+      <li id="high" class="list">
         <i class="fa-solid fa-circle red"></i>
-        Very Important
+        High
       </li>
-      <li class="important list">
+      <li id="medium" class="list">
         <i class="fa-solid fa-circle yellow"></i>
-        Important
+        Medium
+      </li>
+      <li id="low" class="list">
+        <i class="fa-solid fa-circle green"></i>
+        Low
       </li>
     </ul>
 
@@ -62,7 +66,7 @@
         <p class="project-description">tasks description here</p>
       </div>
       <!--Tasks-->
-      <div class="task very-impt">
+      <div class="task high">
         <div class="task-info">
           <input type="checkbox">
           <h3 class="task-name">Sample</h3>
@@ -85,6 +89,30 @@
       </button>
     </section>
   </main>
+
+  <section class="modal">
+    <form class="add-project-form" method="post">
+      <span class="modal-close-btn">&times;</span>
+
+      <label for="title">Title:</label>
+      <input type="text" id="title" placeholder="What to do?">
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" placeholder="date">
+
+      <label for="priorities">Priority:</label>
+      <select id="priorities" class="priorities-dropdown">
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+
+      <label for="desc">Description:</label>
+      <textarea id="desc"></textarea>
+
+      <button id="saveBtn">Save</button>
+    </form>
+  </section>
 
   <footer class="footer">
     <p>Copyright &copy; 2022 shielamarieee</p>
