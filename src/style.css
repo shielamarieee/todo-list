@@ -4,6 +4,7 @@
   --nav-color: #e4dccf;
   --black: #333;
   --lighter-blue:#7d9d9c;
+  --nav-hover: #cec7bb; 
 }
 
 * {
@@ -34,3 +35,72 @@ body {
 .title {
   font-size: 3rem;
 }
+
+/* Main */
+.main {
+  display: flex;
+  min-height: calc(100vh - 4rem - 4rem);
+}
+
+/* Navigation Bar */
+.nav {
+  background-color: var(--nav-color);
+  width: 16vw;
+  padding: 20px;
+  color: var(--black);
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.heading {
+  color: var(--header-color);
+  display: flex;
+  align-self: center;
+  gap: 8px;
+  margin-top: 30px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--header-color);
+}
+
+.heading:first-child {
+  margin-top: 10px;
+}
+
+#homeBtn {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.list {
+  cursor: pointer;
+  padding: 10px 30px;
+  margin: 3px;
+}
+
+.btn:hover {
+  background-color: var(--nav-hover);
+  border-radius: 5px;
+}
+
+/* Projects Menu */
+.add-proj {
+  border: none;
+  background: none;
+  font-size: 1em;
+  line-height: 2em;
+  color: var(--header-color);
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 4px 20px;
+}
+
+/* Priorities Menu */
+.fa-circle, .fa-plus {
+  font-size: .8em;
+}
+
+.red {color: rgb(255, 108, 108);}
+.orange {color: rgb(240, 194, 142);}
+.green {color: rgb(99, 143, 99);}
